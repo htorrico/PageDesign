@@ -4,15 +4,19 @@
              x:Class="Ejercicio03.ListViewSource">
     <ContentPage.Content>
         <StackLayout>
-            <ListView  x:Name="listView">
+            <ListView  x:Name="listView" 
+                       ItemSelected="listView_ItemSelected" 
+                       ItemTapped="listView_ItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
+                            
                             <StackLayout BackgroundColor="#eee" Orientation="Vertical">
-                                <StackLayout Orientation="Horizontal">
+                                <StackLayout Orientation="Vertical">
                                     <!--<Image Source="{Binding image}" />-->
                                     <Label Text="{Binding title}" TextColor="#f35e20" />
-                                    <Label Text="{Binding subtitle}" HorizontalOptions="EndAndExpand" TextColor="#503026" />
+                                    <Label Text="{Binding subtitle}" HorizontalOptions="EndAndExpand" 
+                                           TextColor="#503026" />
                                 </StackLayout>
                             </StackLayout>
                         </ViewCell>

@@ -4,6 +4,7 @@
              x:Class="Ejercicio03.ListViewDemo">
     <ContentPage.Content>
         <StackLayout>
+            
             <ListView >
                 <ListView.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
