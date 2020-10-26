@@ -10,7 +10,7 @@ namespace Ejercicio03
         public App()
         {
             InitializeComponent();
-
+            //Comentario de Ejemplo.
             MainPage = new NavigationPage(new MainPage());
             
         }
